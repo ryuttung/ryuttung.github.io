@@ -1,2 +1,293 @@
-hello index.html
-11wssssd
+<!-- index.html -->
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SEUNGYEON</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- 여기서 파비콘 바꾸기 -->
+    <link rel="icon" type="image/png" href="https://static.wowan.me/assets/seungyeon_avatar.png" />
+    <link rel="apple-touch-icon" href="https://static.wowan.me/assets/seungyeon_avatar.png" />
+</head>
+
+<body>
+    <!-- Top Nav -->
+    <header class="topbar" id="top">
+        <div class="container topbar__inner">
+            <a class="brand" href="./index.html" aria-label="홈으로">
+                <span class="brand__text">SEUNGYEON</span>
+            </a>
+
+            <nav class="nav" aria-label="메인 메뉴">
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#work">Work</a>
+                <a class="nav__link" href="#projects">Project</a>
+            </nav>
+
+            <a class="btn btn--resume" href="./resume.pdf" download="류승연_이력서.pdf">
+                이력서 다운로드
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__inner">
+                <img class="hero_image" src="https://static.wowan.me/assets/seungyeon_hero.png" alt="프로필" />
+
+                <div>
+                    <h1 class="hero__title">안녕하세요, 기획자 류승연입니다</h1>
+                    <p class="hero__subtitle">‘왜’를 묻되, 고민에서 멈추지 않고 결정까지 가져갑니다.</p>
+                </div>
+
+                <div class="hero__cta">
+                    <a class="btn btn--primary" href="#projects">
+                        <p>프로젝트 보기</p>
+                        <img class="btn--arrow-right-icon" src="https://static.wowan.me/assets/ArrowRight.svg"
+                            alt="프로젝트 보기 버튼" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container about__inner">
+                <h2 class="section__title">About me</h2>
+
+                <p class="about-card__lead">
+                    ₊˚⊹ 저는 사용자 일상에 자연스러운 편리함을 더하는 기획자입니다 ⊹˚₊
+                </p>
+
+                <div class="about-card">
+
+                    <div class="about-card__body">
+                        <p>
+                            내가 먼저 쓰고 싶은 서비스를 기준으로 사용자의 일상에 자연스럽게 녹아드는 방향을 고민합니다.
+                            트렌드보다 ‘왜?’라는 질문으로 본질적인 사용자 니즈를 들여다보고, 이를 서비스의 핵심 가치로 연결하고자 합니다.
+                            <br />
+                            기획 과정에서의 고민과 결정은 기록으로 남겨 정리하고 분석하며 지속적으로 성장하고,
+                            이를 바탕으로 서비스의 목표와 사용자 니즈 사이에서 균형을 찾아 의미 있는 선택을 만들어가고자 노력합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="section" id="work">
+            <div class="container work__inner">
+                <h2 class="section__title">Work Experience</h2>
+
+                <article class="work-card">
+                    <header class="work-card__head">
+                        <div class="work-card__logo" aria-hidden="true">
+                            <img src="https://static.wowan.me/assets/mobility42.svg" alt="" />
+                        </div>
+                        <div>
+                            <div class="work-card__company">Mobility42</div>
+                            <div class="work-card__period">2024.11 - 2025.10</div>
+                        </div>
+                    </header>
+
+                    <p class="work-card__summary">
+                        B2B 물류 서비스(Client/Admin) 기획을 담당하며 스프린트 단위로 요구사항 정의, 와이어프레임 설계, QA를 수행했습니다.
+                        실사용자 및 회고 피드백을 바탕으로 기능을 개선하고, MVP 완성과 프로젝트 중단 의사결정에 참여했습니다.
+                    </p>
+
+                    <div class="work-card__block">
+                        <h3 class="work-card__title">Borderbridge | 역직구 전용 국제 물류 관리 플랫폼</h3>
+                        <ul class="list">
+                            <li>개발 기준이 되는 기능 목록 문서를 작성하고, 사용자 흐름·에러 케이스 정책을 포함해 개발 범위를 명확히 정의</li>
+                            <li>오더 상태별로 분산된 정보를 상태 인디케이터로 통합해, 어느 화면에서도 각 상태의 오더 수를 즉시 파악하도록 개선</li>
+                            <li>라스트 마일 송장 인쇄 플로우를 단순화해, 모달 중심 구조 제거 + 하단 fixed 버튼 기반 일괄 인쇄로 UX 개선</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-card__block">
+                        <h3 class="work-card__title">Flowmedi | 국내 의약품 물류 관리 플랫폼</h3>
+                        <ul class="list">
+                            <li>SOP 도입 이후 리스트 페이지 기획을 담당하고, 개발·디자인 팀 회고 피드백을 반영해 기능 개선</li>
+                            <li>MVP를 완성했으며, 파트너 계약 불발에 따른 프로젝트 중단 의사결정에 참여</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-card__block">
+                        <h3 class="work-card__title">Flowmedi Logi | 국제 의약품 물류 관리 플랫폼</h3>
+                        <ul class="list">
+                            <li>리스트 페이지에 기간 검색 기능 + 배송 존재 여부 도트 표시로 조회 편의성 개선</li>
+                            <li>메인 진입 시 당일 배송 여부를 즉시 확인하려는 니즈 기반으로 메인 페이지를 대시보드 형태로 전환 제안</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education + Certificate -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2 edu-wrap">
+                    <div>
+                        <h2 class="section__title section__title--sm text-center">Education</h2>
+
+                        <div class="edu">
+                            <div class="edu__item">
+                                <div class="edu__title">백엔드 개발자 취업 캠프 | 멀티캠퍼스</div>
+                                <ul class="list">
+                                    <li>Java, SQL, Spring Framework, JSP &amp; Servlet, HTTP 등의 역량을 습득</li>
+                                    <li>프로젝트 최우수상</li>
+                                </ul>
+                            </div>
+
+                            <div class="edu__item">
+                                <div class="edu__title">Node.js 기반의 웹 Full-Stack | KOSTA</div>
+                                <ul class="list">
+                                    <li>HTML5, CSS, Javascript, React 등 프론트 관련 역량을 습득</li>
+                                    <li>프로젝트 최우수상</li>
+                                </ul>
+                            </div>
+
+                            <div class="edu__item">
+                                <div class="edu__title">의료it마케팅학과 | 을지대학교</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="section__title section__title--sm text-center">Certificate</h2>
+                        <div class="edu">
+                            <div class="edu__item">
+                                <div class="edu__title">SQL개발자(SQLD자격)</div>
+                            </div>
+                            <div class="edu__item">
+                                <div class="edu__title">정보처리기사</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Side Project -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Side Project</h2>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-card__thumb" aria-hidden="true">
+                            <img src="https://static.wowan.me/assets/freeidea_cover.svg" alt="프리디어 커버" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Freeidea</h3>
+                            <p class="project-card__desc">
+                                기획 공백 상태의 서비스를 운영 가능한 구조로 만든 일러스트 및 디자인 커뮤니티.
+                            </p>
+                            <a href="#" class="btn btn--more">
+                                더 알아보기 <span class="arrow">→</span>
+                            </a>
+
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__thumb" aria-hidden="true">
+                            <img src="https://static.wowan.me/assets/freeidea_cover.svg" alt="푸디페어 커버" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">편:편</h3>
+                            <p class="project-card__desc">
+                                개발자로 참여했던 FoodieFair를, 기획자로서 재정의한 통합 편의점 리뷰 플랫폼.
+                            </p>
+                            <a href="#" class="btn btn--more">
+                                더 알아보기 <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__thumb" aria-hidden="true">
+                            <img src="https://static.wowan.me/assets/freeidea_cover.svg" alt="편편 커버" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">FoodieFair</h3>
+                            <p class="project-card__desc">
+                                영수증 인증 리뷰와 편의점 행사 정보를 한 번에 제공하는 통합 편의점 리뷰 플랫폼.
+                            </p>
+                            <a href="#" class="btn btn--more">
+                                더 알아보기 <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- <div class="projects-cta">
+                    <a class="btn btn--allprojects" href="#">
+                        프로젝트 전체 보기 <span class="arrow">→</span>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+
+                <div class="contact">
+                    <div class="contact__info">
+                        <div class="contact__line">
+                            <span class="dot" aria-hidden="true"></span>
+                            <a class="contact__link" href="mailto:seung43422@gmail.com">seung43422@gmail.com</a>
+                        </div>
+                        <div class="contact__line">
+                            <span class="dot" aria-hidden="true"></span>
+                            <a class="contact__link" href="tel:01024627966">010-2462-7966</a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" action="#" method="post">
+                        <div class="contact__form-title">메시지 보내기</div>
+
+                        <label class="field">
+                            <span class="field__label">이름</span>
+                            <input class="field__input" type="text" name="name" placeholder="" />
+                        </label>
+
+                        <label class="field">
+                            <span class="field__label">이메일</span>
+                            <input class="field__input" type="email" name="email" placeholder="" />
+                        </label>
+
+                        <label class="field">
+                            <span class="field__label">메시지</span>
+                            <textarea class="field__input field__textarea" name="message" rows="4"></textarea>
+                        </label>
+
+                        <button class="btn btn--primary btn--full" type="submit">메시지 전송</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <small>© 2026 SEUNGYEON. All rights reserved.</small>
+        </div>
+    </footer>
+    <script>
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('is-active'));
+                link.classList.add('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
