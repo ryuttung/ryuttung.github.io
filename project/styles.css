@@ -1,0 +1,10 @@
+.portpolio-content-wrap {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.portpolio-content {
+    width: 750px;
+    height: auto;
+}

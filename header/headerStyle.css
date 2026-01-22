@@ -1,0 +1,82 @@
+/* Header Only */
+
+/* Topbar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar__inner {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0; /* container가 좌우 여백 담당 */
+}
+
+.brand__text {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #86a0bc;
+  line-height: 29px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 6px 20px;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+  line-height: 17px;
+}
+
+.nav__link:hover {
+  color: #86a0bc;
+}
+
+.nav__link.is-active {
+  color: #86a0bc;
+  font-weight: 600;
+}
+
+/* Header button (이력서) */
+.btn--resume {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 20px;
+  gap: 13px;
+
+  border: 1px solid #dbdee3;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+
+  box-shadow: none;
+  line-height: 17px;
+}
+
+.btn--resume:hover {
+  background: #86a0bc;
+  color: #ffffff;
+}
+
+/* anchor scroll offset for sticky header */
+section[id] {
+  scroll-margin-top: 72px;
+}
