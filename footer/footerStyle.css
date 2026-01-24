@@ -1,0 +1,10 @@
+/* Footer */
+.footer {
+    padding: 18px 0 30px;
+    color: var(--muted);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+}

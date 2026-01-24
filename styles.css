@@ -375,17 +375,6 @@
     font-weight: 500;
 }
 
-/* Footer */
-.footer {
-    padding: 18px 0 30px;
-    color: var(--muted);
-}
-
-.footer__inner {
-    display: flex;
-    justify-content: center;
-}
-
 /* Desktop */
 @media (min-width: 1280px) {
     .hero {
