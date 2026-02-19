@@ -6,5 +6,93 @@
 
 .portpolio-content {
     width: 750px;
+}
+
+
+/* work project */
+
+.work-content {
+    width: 852px;
+}
+
+/* 상단 텍스트 */
+body.work-project .kicker {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    margin-top: 100px;
+}
+
+body.work-project .title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 20px 0 40px 0;
+}
+
+/* 요약 카드 */
+body.work-project .summary {
+    width: 852px;
     height: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .10);
+    padding: 20px 30px;
+    margin: 80px 0;
+}
+
+body.work-project .summary__grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 8px 20px;
+}
+
+body.work-project .summary__label {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+body.work-project .summary__value {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+/* 본문 */
+body.work-project .section {
+    margin-top: 60px;
+}
+
+body.work-project .section__title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2c2c2c;
+    margin: 0 0 40px;
+}
+
+body.work-project .section__body {
+    font-size: 16px;
+    color: var(--muted);
+}
+
+/* 반응형 */
+@media (max-width: 820px) {
+    .portpolio-content {
+        width: calc(100% - 32px);
+    }
+
+    body.work-project .title {
+        font-size: 22px;
+    }
+
+    body.work-project .hero {
+        height: 120px;
+    }
+
+    body.work-project .summary__grid {
+        grid-template-columns: 120px 1fr;
+    }
 }

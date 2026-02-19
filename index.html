@@ -46,13 +46,13 @@
                     <!-- <p class="hero__subtitle">‘왜’를 묻되, 고민에서 멈추지 않고 결정까지 가져갑니다.</p> -->
                 </div>
 
-                <div class="hero__cta">
+                <!-- <div class="hero__cta">
                     <a class="btn btn--primary" href="#projects">
                         <p>프로젝트 보기</p>
                         <img class="btn--arrow-right-icon" src="https://static.wowan.me/assets/ArrowRight.svg"
                             alt="프로젝트 보기 버튼" />
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -81,7 +81,7 @@
         <!-- Work -->
         <section class="section" id="work">
             <div class="container work__inner">
-                <h2 class="section__title">Work Experience</h2>
+                <h2 class="section__title">Career</h2>
 
                 <article class="work-card">
                     <header class="work-card__head">
@@ -94,36 +94,80 @@
                         </div>
                     </header>
 
-                    <p class="work-card__summary">
-                        B2B 물류 서비스(Client/Admin) 기획을 담당하며 스프린트 단위로 요구사항 정의, 와이어프레임 설계, QA를 수행했습니다.
-                        실사용자 및 회고 피드백을 바탕으로 기능을 개선하고, MVP 완성과 프로젝트 중단 의사결정에 참여했습니다.
-                    </p>
+                    <!-- <p class="work-card__summary">
+                        B2B 물류 서비스(Client/Admin) 기획을 담당하며 스프린트 단위로 와이어프레임 설계부터 QA,회고를 진행했습니다.
+                    </p> -->
+
+                    <div class="work-card__block">
+                        <h3 class="work-card__title">Flowmedi Logi | 국내 의약품 물류 관리 플랫폼</h3>
+                        <ul class="list">
+                            <li>리스트 페이지에 기간 검색 기능을 설계하고, 배송 유무를 도트로 표시해 조회 가독성 향상</li>
+                            <li>메인 페이지와 검색 기능 중복 문제를 인지하고, 당일 배송 중심의 대시보드 구조로 개편 제안</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-card__block">
+                        <h3 class="work-card__title">Flowmedi | 국제 의약품 물류 관리 플랫폼</h3>
+                        <ul class="list">
+                            <li>사용자의 사용 맥락을 고려해 기본 필터와 확장 필터 구조로 분리하여 화면 설계</li>
+                            <li>단일 Product 선택 구조를 다중 선택 가능 구조로 개편해 한 배송에 복수 상품 등록 가능하도록 정책 개선</li>
+                            <li>배송 생성 시, 선택사항인 태그를 완료 기준에서 제외하고, 개수 기반 표시로 변경해 상태 정의 명확화</li>
+                        </ul>
+                    </div>
 
                     <div class="work-card__block">
                         <h3 class="work-card__title">Borderbridge | 역직구 전용 국제 물류 관리 플랫폼</h3>
                         <ul class="list">
-                            <li>개발 기준이 되는 기능 목록 문서를 작성하고, 사용자 흐름·에러 케이스 정책을 포함해 개발 범위를 명확히 정의</li>
-                            <li>오더 상태별로 분산된 정보를 상태 인디케이터로 통합해, 어느 화면에서도 각 상태의 오더 수를 즉시 파악하도록 개선</li>
-                            <li>라스트 마일 송장 인쇄 플로우를 단순화해, 모달 중심 구조 제거 + 하단 fixed 버튼 기반 일괄 인쇄로 UX 개선</li>
-                        </ul>
-                    </div>
-
-                    <div class="work-card__block">
-                        <h3 class="work-card__title">Flowmedi | 국내 의약품 물류 관리 플랫폼</h3>
-                        <ul class="list">
-                            <li>SOP 도입 이후 리스트 페이지 기획을 담당하고, 개발·디자인 팀 회고 피드백을 반영해 기능 개선</li>
-                            <li>MVP를 완성했으며, 파트너 계약 불발에 따른 프로젝트 중단 의사결정에 참여</li>
-                        </ul>
-                    </div>
-
-                    <div class="work-card__block">
-                        <h3 class="work-card__title">Flowmedi Logi | 국제 의약품 물류 관리 플랫폼</h3>
-                        <ul class="list">
-                            <li>리스트 페이지에 기간 검색 기능 + 배송 존재 여부 도트 표시로 조회 편의성 개선</li>
-                            <li>메인 진입 시 당일 배송 여부를 즉시 확인하려는 니즈 기반으로 메인 페이지를 대시보드 형태로 전환 제안</li>
+                            <li>기능 목록·정책·에러 케이스를 포함한 기획 문서를 작성해 개발 기준 수립 및 팀 공통 문서로 활용</li>
+                            <li>오더 상태 인디케이터를 설계해 페이지 이동 없이 전체 현황을 확인할 수 있도록 구조 개선</li>
                         </ul>
                     </div>
                 </article>
+
+            </div>
+        </section>
+
+        <!-- Work Project -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Work Project</h2>
+
+                <div class="project-grid">
+                    <a href="./project/borderbridge" class="project-card-link">
+                        <article class="project-card">
+                            <div class="project-card__thumb" aria-hidden="true">
+                                <img src="https://static.wowan.me/assets/seungyeon/portfolio_mobility42.svg"
+                                    alt="Borderbridge 커버" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3 class="project-card__title">Borderbridge</h3>
+                                <p class="project-card__desc">
+                                    B2B 대량 오더 운영 흐름에 맞춘 상태 페이지 정보 구조 개선
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="./project/flowmedi" class="project-card-link">
+                        <article class="project-card">
+                            <div class="project-card__thumb" aria-hidden="true">
+                                <img src="https://static.wowan.me/assets/seungyeon/portfolio_mobility42.svg"
+                                    alt="flowmedi 커버" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3 class="project-card__title">Flowmedi</h3>
+                                <p class="project-card__desc">
+                                    선택 항목의 완료 기준 재정의 및 상태 표현 개선
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+
+                <!-- <div class="projects-cta">
+                    <a class="btn btn--allprojects" href="#">
+                        더보기
+                    </a>
+                </div> -->
             </div>
         </section>
 
@@ -171,56 +215,38 @@
                 </div>
         </section>
 
-        <!-- Side Project -->
+        <!-- Personal Project -->
         <section class="section" id="projects">
             <div class="container">
-                <h2 class="section__title">Side Project</h2>
+                <h2 class="section__title">Personal Project</h2>
 
                 <div class="project-grid">
-                    <article class="project-card">
-                        <div class="project-card__thumb" aria-hidden="true">
-                            <img src="https://static.wowan.me/assets/freeidea_cover.svg" alt="프리디어 커버" />
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">Freeidea</h3>
-                            <p class="project-card__desc">
-                                기획 공백 상태의 서비스를 운영 가능한 구조로 만든 일러스트 및 디자인 커뮤니티.
-                            </p>
-                            <a href="./project/freeidea" class="btn btn--more">
-                                더 알아보기 <span class="arrow">→</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-card__thumb" aria-hidden="true">
-                            <img src="https://static.wowan.me/assets/pyeonpyeon.png" alt="푸디페어 커버" />
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">편:편</h3>
-                            <p class="project-card__desc">
-                                개발자로 참여했던 FoodieFair를, 기획자로서 재정의한 통합 편의점 리뷰 플랫폼.
-                            </p>
-                            <a href="./project/pyeonpyeon" class="btn btn--more">
-                                더 알아보기 <span class="arrow">→</span>
-                            </a>
-                        </div>
-                    </article>
-
-                    <!-- <article class="project-card">
-                        <div class="project-card__thumb" aria-hidden="true">
-                            <img src="https://static.wowan.me/assets/pyeonpyeon.png" alt="foodiefair 커버" />
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">FoodieFair</h3>
-                            <p class="project-card__desc">
-                                영수증 인증 리뷰와 편의점 행사 정보를 한 번에 제공하는 통합 편의점 리뷰 플랫폼.
-                            </p>
-                            <a href="#" class="btn btn--more">
-                                더 알아보기 <span class="arrow">→</span>
-                            </a>
-                        </div>
-                    </article> -->
+                    <a href="./project/freeidea" class="project-card-link">
+                        <article class="project-card">
+                            <div class="project-card__thumb" aria-hidden="true">
+                                <img src="https://static.wowan.me/assets/freeidea_cover.svg" alt="프리디어 커버" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3 class="project-card__title">Freeidea</h3>
+                                <p class="project-card__desc">
+                                    기획 공백 상태의 서비스를 운영 가능한 구조로 만든 일러스트 및 디자인 커뮤니티.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="./project/pyeonpyeon" class="project-card-link">
+                        <article class="project-card">
+                            <div class="project-card__thumb" aria-hidden="true">
+                                <img src="https://static.wowan.me/assets/pyeonpyeon.png" alt="푸디페어 커버" />
+                            </div>
+                            <div class="project-card__body">
+                                <h3 class="project-card__title">편:편</h3>
+                                <p class="project-card__desc">
+                                    개발자로 참여했던 FoodieFair를, 기획자로서 재정의한 통합 편의점 리뷰 플랫폼.
+                                </p>
+                            </div>
+                        </article>
+                    </a>
                 </div>
 
                 <!-- <div class="projects-cta">
